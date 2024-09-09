@@ -14,3 +14,5 @@ function createPerson(name, age) {
 
   return person;
 }
+
+const keagan = createPerson('Keagan', 18);

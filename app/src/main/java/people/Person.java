@@ -9,12 +9,18 @@ public class Person {
         this.age = age;
     }
 
+    /** Instance method -- associated with a particular person */
     public void introduce() {
         System.out.println(String.format(
             "Hi, my name is %s and I am %d years old",
             this.name,
             this.age
         ));
+    }
+
+    /** Static method -- associated with the "concept of people" */
+    public static int countPeople(Person[] people) {
+        return people.length;
     }
 
     public static void main(String[] args) {
